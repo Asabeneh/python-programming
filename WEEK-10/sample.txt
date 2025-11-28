@@ -1,0 +1,12 @@
+Hello everyone, this is our introduction lesson
+Let us get started with Python programming
+This is the third week of our lesson
+Thank you so much you made to the fourth lesson
+This should have a time stamp - 2023-11-09 18:18:31.271797 
+This should have a time stamp - 11/09/2023, 18:21:10 
+This should have a time stamp - Nov, /09/2023, 18:22:01 
+This should have a time stamp - 09 Nov, 2023, 18:22:40 
+This should have a time stamp - 09 Nov 2023 18:22:57 
+This should have a time stamp - 09 Nov 2023 18:23 
+This should have a time stamp - 09 Nov 2023 18:24 
+This should have a time stamp - 09 Nov 2023 18:24 
