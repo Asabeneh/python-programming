@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Roboto;
+            line-height: 160%;
+        }
+        h1, h2, h3, h4,h5, h6 {
+            font-family: Inter;
+        }
+        p {
+            font-family: Roboto;
+            font-weight: 400;
+        }
+        .cats {
+            width: 65%;
+            margin: auto;
+        }
+        img {
+            max-width: 100%
+        }
+        h3 {
+            color:purple;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        small {
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cats">
+        <h1 style="text-align:center; font-size: 36px;color:gre">Cats Paradise</h1>
+     <small>The number of cats are {{n}}</small>
+          {% for cat in data %}
+    <div>
+         <img src ={{cat.image_url}} />
+    <h2>{{cat.country}}</h2>
+    <h3> {{cat.name}}</h3>
+    <p>{{cat.description}}</p>
+    </div>
+   
+    {% endfor %}
+    </div>
+</body>
+</html>

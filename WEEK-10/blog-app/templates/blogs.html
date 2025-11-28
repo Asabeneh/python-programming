@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block content %}  
+<div class="blogs">
+    <h1>Blogs page</h1>
+    <h2>Blogs ({{number}})</h2>
+   
+    {% for blog in blogs %}
+    <section class="blog-section">
+    <div class="blog-cover-image">
+        {% if blog.cover_image  %}
+        <img src="./static/images/{{blog.cover_image}}" alt="{{blog.title}}">
+
+        {% else %}
+        <img src="./static/images/sample.png" alt="{{blog.title}}">
+        {% endif %}
+    </div>
+    <div class="blog-content">
+        <h3>
+            <a href="{{url_for('blog_details', id = blog.id)}}">{{ blog.title }}</a>
+        </h3>
+        <p>{{ blog.content}}</p>
+    </div>
+  
+   </section>
+
+    {% endfor %}
+</div>
+
+{% endblock content %}

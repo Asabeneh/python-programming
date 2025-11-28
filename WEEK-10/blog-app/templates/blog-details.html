@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block content %}  
+<div>
+   <div>
+    <h1>{{ blog.title }}</h1>
+    <h3>{{blog.subtitle}}</h3>
+
+   </div>
+     {% if blog.cover_image %}
+
+     {% if blog.cover_image.endswith('.mp4') %}
+     <video width="100%" controls>
+        <source src="{{url_for('static', filename = 'images/' + blog.cover_image)}}" type="video/mp4">
+     </video>
+
+     {% elif blog.cover_image.endswith('.jpg') %}
+     <img src="{{url_for('static', filename = 'images/' + blog.cover_image)}}" alt="{{blog.title}}">
+
+     {% endif %}
+     
+     {% endif %}
+    <div>
+        <p>{{blog.content}}</p>
+    </div>
+    
+    <div class="actions">
+        <a href="{{ url_for('edit_blog', id = blog.id)}}" class="btn btn-edit">Edit</a>
+        <a href="{{url_for('delete_blog', id = blog.id)}}" class="btn btn-delete">Delete</a>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,29 @@
+header,
+main,
+footer {
+  width: 65%;
+  margin: auto;
+}
+.quote {
+  box-shadow: 0px 0px 2px 3px rgb(245, 243, 243);
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 15px;
+}
+.quote-content {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+
+ul li {
+    display: inline-block;
+    margin: 25px;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <header>
+        <ul class="nav-bar">
+            <li class="nav-list">
+                <a href="{{ url_for('home')}}" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="{{ url_for('about')}}" class="nav-link">About</a>
+            </li>
+            <li class="nav-list">
+                <a href="{{ url_for('contacts')}}"class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-list">
+                <a href="{{ url_for('blogs')}}" class="nav-link">Blogs</a>
+            </li>
+        </ul>
+        
+        <h1>CRUD(Create, Read, Update and Delete) Application</h1>
+       </header>
+
+      
+
+       
+        <main>
+            {% block content %}{% endblock %}
+
+        </main>
+      
+       <footer>
+        Copyright &copy; | 2024
+       </footer>
+    
+</body>
+</html>

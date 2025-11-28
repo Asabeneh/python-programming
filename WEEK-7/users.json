@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Asab",
+        "country": "Finland",
+        "gender": "Male"
+    },
+    {
+        "id": 2,
+        "name": "Eelon",
+        "country": "Finland",
+        "gender": "Male"
+    },
+    {
+        "id": 3,
+        "name": "Kinta",
+        "country": "Sweden",
+        "gender": "Female"
+    }
+]

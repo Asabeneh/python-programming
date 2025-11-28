@@ -1,0 +1,12 @@
+
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="quote-wrapper">
+        {% for quote in data %}
+        <div class="quote">
+            <p class="quote-content">{{ quote['text'] }}</p>
+            <small class="quote-author">{{ quote['author'] }}</small>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

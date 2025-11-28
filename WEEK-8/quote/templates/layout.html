@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <header>
+        <ul class="nav-bar">
+            <li class="nav-list">
+                <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            <li class="nav-list">
+                <a href="{{ url_for('quotes')}}" class="nav-link">Quotes</a>
+            </li>
+        </ul>
+        
+        <h1>Favorite Quote Generator</h1>
+       </header>
+
+      
+
+       
+        <main>
+            {% block content %}{% endblock %}
+
+        </main>
+      
+
+      
+
+
+       <footer>
+        Copyright &copy; | 2024
+       </footer>
+    
+</body>
+</html>
